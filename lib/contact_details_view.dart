@@ -55,8 +55,8 @@ class ContactDetailsView extends StatelessWidget {
                   title: const Text(
                     'Mobile',
                     style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
- ),
-         subtitle:  Text(
+                       ),
+                  subtitle:  Text(
                     contact.phone,
                     style: const TextStyle(
                         fontWeight: FontWeight.normal,
@@ -89,17 +89,14 @@ class ContactDetailsView extends StatelessWidget {
                             ),
                       ), 
 
- 
-
-
                 
-                ])),
+                    ])),
                 ListTile(
                   title: const Text(
                     'Email',
                     style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                   ),
-                                    subtitle: Text(
+                   subtitle: Text(
                     contact.email,
                     style: const TextStyle(
                         fontWeight: FontWeight.normal,
@@ -119,7 +116,7 @@ class ContactDetailsView extends StatelessWidget {
                     ],
                   ),
                 ),
-             const ListTile(
+                const ListTile(
                   title: Text(      
                     'Group',
                     style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
@@ -132,7 +129,11 @@ class ContactDetailsView extends StatelessWidget {
                         color: Color(0xff333333)
                         ),
                         ),
-                        ), 
+                        ),
+              ]
+            ),
+         ),
+               
 
                       const Padding(
             padding: EdgeInsets.all(16.0),
@@ -162,9 +163,12 @@ class ContactDetailsView extends StatelessWidget {
                   ),
                   trailing: Image.asset('assets/whatsapp.png'),
                 ),
+              ]
+            )
+    )
 
 
-                const Padding(
+                ,const Padding(
             padding: EdgeInsets.all(16.0),
             child: Text(
               'More Options',
@@ -187,6 +191,10 @@ class ContactDetailsView extends StatelessWidget {
                     style: TextStyle(fontSize: 18),
                   ),
                 )
-    ])  )]))]))]));
+    ],
+    ),
+      )
+        ])
+      );
   }
 }
